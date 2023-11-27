@@ -1,6 +1,8 @@
 import { Button, Center, Text, Stack } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 
+import Todo from './Todo';
+
 export const Home = () => (
     <Center h="100vh">
         <Stack>
@@ -8,6 +10,8 @@ export const Home = () => (
             <Button as={Link} to="/asdfg" colorScheme="blue">
                 Перейти на страницу 404
             </Button>
+
+            <Todo/>
         </Stack>
     </Center>
 )
